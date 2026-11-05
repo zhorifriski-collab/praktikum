@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background: #1f4e79;
+    color: white;
+}
+
+.logo {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 16px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    padding: 16px;
+    background: #eeeeee;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
+}
+
+.kartu {
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.kartu h3 {
+    margin-top: 0;
+}
+
+@media (min-width: 600px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
